@@ -11,9 +11,10 @@ body{
     justify-content: center;
     text-align: center;
     border: 1px solid black;
-    width: 400px;
-    border-radius: 10px;
+    width: 340px;
+    border-radius: 20px;
     background-color: hotpink;
+    height: 500px;
     
 }
 .btn{
