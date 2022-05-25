@@ -1,0 +1,32 @@
+body{
+    position: fixed;
+    top: 100px;
+    left: 400px;
+    justify-content: center;
+    background-color:gray ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 10px;
+    background-color: hotpink;
+    
+}
+.btn{
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.input-box{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 20px;
+}
