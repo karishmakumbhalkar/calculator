@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calci</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function add() {
+            let number1 = parseInt(document.getElementById('input1').value);
+            let number2 = parseInt(document.getElementById('input2').value);
+            let sum = number1 + number2;
+            document.getElementById('output').innerHTML = number1 + number2;
+        }
+        function sub() {
+            let number1 = parseInt(document.getElementById('input1').value);
+            let number2 = parseInt(document.getElementById('input2').value);
+            let sub = number1 - number2;
+            document.getElementById('output').innerHTML = number1 - number2;
+        }
+        function mul() {
+            let number1 = parseInt(document.getElementById('input1').value);
+            let number2 = parseInt(document.getElementById('input2').value);
+            let mul = number1 + number2;
+            document.getElementById('output').innerHTML = number1 * number2;
+        }
+        function div() {
+            let number1 = parseInt(document.getElementById('input1').value);
+            let number2 = parseInt(document.getElementById('input2').value);
+            let div = number1 + number2;
+            document.getElementById('output').innerHTML = number1 / number2;
+        }
+    </script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="box">
+            <h3>Number 1:</h3><input type="text" class="input-box" id="input1"><br>
+            <h3>Number 2:</h3><input type="text" class="input-box" id="input2"><br>
+        </div><br>
+        <div class="btns">
+            <button class="btn" onclick="add()">+</button>
+            <button class="btn" onclick="sub()">-</button>
+            <button class="btn" onclick="mul()">*</button>
+            <button class="btn" onclick="div()">/</button>
+        </div><br>
+        <h2>Answer</h2>
+        <h1 id="output"></h1>
+    </div>
 </body>
+
 </html>
